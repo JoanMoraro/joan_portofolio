@@ -4,8 +4,8 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 
 ## 🌐 Live Preview
 
-> [Click here to view the live site](#)  
-> _(Replace with your deployed site link)_
+> [[Click here to view the live site]
+> (https://joanmoraro.github.io/joan_portofolio/)](#)  
 
 ---
 
