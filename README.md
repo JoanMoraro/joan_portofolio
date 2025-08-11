@@ -1,83 +1,97 @@
-# 🎨 Joan Moraro - Personal Portfolio Website
+```markdown
+# 🌐 Joan Moraro - Personal Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills, education, projects, and contact information in a clean, modern, and responsive layout.
-
-## 🌐 Live Preview
-
-> [[Click here to view the live site]
-> (https://joanmoraro.github.io/joan_portofolio/)](#)  
+Welcome to my personal portfolio website!  
+This project showcases my skills, projects, and interests as a web developer.  
+It’s built with **HTML, CSS, and JavaScript** and designed to be clean, responsive, and easy to navigate.
 
 ---
 
-## 📁 Project Overview
-
-This portfolio was built using **HTML** and **CSS only**, with a strong focus on responsive design and clean visual aesthetics. It includes:
-
-- 🧑‍💻 Hero Section with personal intro and image  
-- 🧾 About Me section  
-- 🎓 Education background  
-- 🛠️ Skills and Interests  
-- 💼 Projects (with GitHub links)  
-- 📬 Contact form  
-- 📄 Downloadable CV
+## 📌 Features
+- **Responsive Design** – Works on desktop, tablet, and mobile devices.
+- **Dark/Light Mode Toggle** 🌙☀️
+- **Smooth Scroll Navigation** ✨
+- **Animated Typing Effect** on hero section.
+- **Interactive Skills Bars** to highlight expertise.
+- **Projects Section** with GitHub links.
+- **Contact Form** for direct communication.
+- **Social Media Links** – Instagram, LinkedIn, GitHub.
 
 ---
 
-## 🔧 Technologies Used
-
-| Frontend | Tools |
-|----------|-------|
-| HTML5    | 🧱 Structure |
-| CSS3     | 🎨 Styling & layout |
-| Flexbox & Grid | 🧭 Responsive layout |
-| Font: Segoe UI | 📝 Typography |
+## 🚀 Live Demo
+🔗 **[View Portfolio on GitHub Pages(https://joanmoraro.github.io/joan_portofolio/)**
 
 ---
 
-## 📚 Education
+## 📂 Project Structure
+```
 
-**Bachelor of Science in Computer Science**  
-_University of Eldoret_  
-2021 - Present
+📁 portfolio/
+┣ 📂 images/       # Profile picture & project images
+┣ 📂 Documents/    # CV or resume
+┣ 📄 index.html    # Main HTML file
+┣ 📄 style.css     # Styling
+┣ 📄 script.js     # JavaScript animations & effects
+┗ 📄 README.md     # Project documentation
 
----
-
-## 💼 Projects
-
-| Project | Description | Link |
-|--------|-------------|------|
-| 🧮 Simple Python Calculator | A basic calculator using Python. | [GitHub Repo](https://github.com/JoanMoraro/Assignment2) |
-
-> Add more projects by updating this table as needed.
+````
 
 ---
 
-## 📥 Download CV
-
-Click the link below to download my CV:
-
-[📄 Download CV](resume.pdf)
-
----
-
-## 📬 Contact
-
-Feel free to reach out via the contact form on the site, or email me directly:
-
-📧 **morarojoan378@gmail.com**  
-📞 **+254793397179**
+## 🛠️ Built With
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
 
 ---
 
-## 📝 License
+## 🖥️ How to Run Locally
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JoanMoraro/joan_portofolio.git
+````
 
-This project is open for learning and personal inspiration. If you’d like to reuse or modify it for your own portfolio, feel free but kindly give credit.
+2. **Open the folder**
+
+   ```bash
+   cd your-repo-name
+   ```
+3. **Open in browser**
+
+   * Simply double-click `index.html` or open it with your preferred browser.
 
 ---
 
-## 🙌 Acknowledgments
+## 🌍 Hosting on GitHub Pages
 
-Thanks to the inspiration from other developer portfolios and CSS design patterns.
+1. Push your code to a GitHub repository.
+2. Go to **Settings → Pages**.
+3. Under **Branch**, select `main` and `/ (root)`.
+4. Click **Save**.
+5. Your portfolio will be live at:
+
+   ```
+   https://<your-username>.github.io/<your-repo-name>/
+   ```
 
 ---
 
+## 📬 Contact Me
+
+* **Email:** [morarojoan378@gmail.com](mailto:morarojoan378@gmail.com)
+* **LinkedIn:** [linkedin.com/in/yourusername](https://www.linkedin.com/in/joan-moraro-86a443338/)
+* **GitHub:** [github.com/JoanMoraro](https://github.com/JoanMoraro)
+* **Instagram:** [instagram.com/yourusername](https://www.instagram.com/m.oraro_joan)
+
+---
+
+⭐ If you like my portfolio, feel free to fork the repo and give it a star!
+
+```
+
+---
+
+I can also **insert your actual GitHub Pages live link and real LinkedIn/Instagram handles** so you won’t need to replace the placeholders.  
+Do you want me to go ahead and personalize those for you?
+```
