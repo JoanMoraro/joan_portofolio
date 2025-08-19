@@ -1,4 +1,4 @@
-const roles = ["a Web Developer", "an AI Enthusiast", "a Blockchain Explorer"];
+const roles = ["Joan Moraro", "a Web Developer", "an AI Enthusiast", "a Blockchain Explorer"];
 let roleIndex = 0;
 let charIndex = 0;
 const typingText = document.getElementById("typing-text");
