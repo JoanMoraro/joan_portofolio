@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joan Moraro | Python Developer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">JM<span>/</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-avatar">
+    <span class="code-icon">&lt;/&gt;</span>
+  </div>
+  <div class="hero-text">
+    <h1>Hi, I'm Joan Moraro.</h1>
+    <h2>Python Developer</h2>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/joanmoraro/" class="pill-link" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/m.ojo0" class="pill-link" target="_blank">Instagram ↗</a>
+      <a href="https://github.com/JoanMoraro" class="pill-link" target="_blank">GitHub ↗</a>
+      <a href="mailto:morarojoan378@gmail.com" class="pill-link">E-mail ↗</a>
+    </div>
+     <a href="{{ url_for('static', filename='CV.pdf') }}" class="btn cv-btn" download>Download CV ⬇</a>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>PYTHON</span><span>/</span><span>FLASK</span><span>/</span><span>DJANGO</span><span>/</span>
+    <span>FASTAPI</span><span>/</span><span>POSTGRESQL</span><span>/</span><span>DOCKER</span><span>/</span>
+    <span>PYTHON</span><span>/</span><span>FLASK</span><span>/</span><span>DJANGO</span><span>/</span>
+    <span>FASTAPI</span><span>/</span><span>POSTGRESQL</span><span>/</span><span>DOCKER</span><span>/</span>
+  </div>
+</div>
+
+<main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About.</h2>
+    <div class="about-grid">
+      <div class="about-visual"></div>
+      <div class="about-text">
+  <p>I didn't fall in love with software because of code — I fell in love with the idea that a few lines of code could solve problems people face every day.</p>
+  <p>That curiosity led me to Computer Science, but it was building projects that truly shaped me as an engineer. Every application I've created has started with a simple question: <em>"How can technology make this easier?"</em></p>
+
+  <div class="about-extra" id="about-extra">
+    <p>Whether it's helping businesses manage inventory, improving how schools organize information, or designing distributed systems that mimic real-world cloud infrastructure, I enjoy turning complex problems into practical software solutions.</p>
+    <p>Today, I specialize in <strong>backend development</strong>, where I design the systems that power applications behind the scenes. I primarily work with <strong>Python, Java, Django, and Spring Boot</strong>, building secure REST APIs, designing efficient databases, and creating scalable architectures that are reliable and easy to maintain.</p>
+    <p>My experience as a <strong>Software Development Intern at the County Government of Kisii</strong> gave me the opportunity to work on real software used within government departments. Collaborating with experienced developers taught me the importance of writing clean code, solving problems methodically, and building systems that people can rely on every day.</p>
+    <p>I believe great software is more than features and functionality. It's about understanding the people who will use it, solving the right problems, and creating experiences that make life easier.</p>
+    <p>Today, I'm continually exploring backend engineering, distributed systems, cloud technologies, and artificial intelligence — not because they're trending, but because they challenge me to become a better engineer with every project I build.</p>
+    <p class="signature-line">I'm not just building applications. I'm building solutions that make a difference.</p>
+  </div>
+
+  <button id="read-more-btn" class="read-more-btn">Read more ↓</button>
+</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience.</h2>
+    <div class="timeline">
+      {% for e in experience %}
+      <div class="timeline-item">
+        <span class="timeline-date">{{ e.period }}</span>
+        <h4>{{ e.role }} {% if e.current %}<span class="pill">Current</span>{% endif %}</h4>
+        {% if e.company %}<p class="company">{{ e.company }}</p>{% endif %}
+        <p class="timeline-desc">{{ e.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills.</h2>
+  <div class="skills-list">
+    <div class="skill-row"><span class="skill-icon py">Py</span><p>Python Development</p><span class="skill-meta">Core</span></div>
+    <div class="skill-row"><span class="skill-icon flask">Dj</span><p>Django</p><span class="skill-meta">Advanced</span></div>
+    <div class="skill-row"><span class="skill-icon java">Jv</span><p>Java & Spring Boot</p><span class="skill-meta">Advanced</span></div>
+    <div class="skill-row"><span class="skill-icon api">Ap</span><p>REST API Development</p><span class="skill-meta">Advanced</span></div>
+    <div class="skill-row"><span class="skill-icon db">Db</span><p>Database Design (PostgreSQL / MySQL)</p><span class="skill-meta">Intermediate</span></div>
+    <div class="skill-row"><span class="skill-icon js">JS</span><p>HTML, CSS & JavaScript</p><span class="skill-meta">Intermediate</span></div>
+  </div>
+</section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects.</h2>
+    <div class="projects-list">
+      {% for p in projects %}
+      <div class="project-row">
+        <div>
+          <h4>{{ p.title }}</h4>
+          <p>{{ p.desc }}</p>
+          <div class="tags">{% for tag in p.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+        </div>
+        <div class="project-links">
+          <a href="{{ p.demo }}">Live ↗</a>
+          <a href="{{ p.code }}">Code ↗</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact.</h2>
+    <p class="contact-sub">Contact me or follow my social media</p>
+
+    <div class="contact-pills">
+      <a href="https://www.linkedin.com/in/joanmoraro/" class="pill-link" target="_blank">LinkedIn ↗</a>
+      <a href="https://www.instagram.com/m.ojo0" class="pill-link" target="_blank">Instagram ↗</a>
+      <a href="https://github.com/JoanMoraro" class="pill-link" target="_blank">GitHub ↗</a>
+      <a href="mailto:morarojoan378@gmail.com" class="pill-link">E-mail ↗</a>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<div class="flash">{{ messages[0] }}</div>{% endif %}
+    {% endwith %}
+
+    <form class="contact-form" method="POST" action="{{ url_for('contact') }}">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Joan Moraro. All rights reserved.</p>
+  </footer>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
