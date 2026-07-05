@@ -2,7 +2,7 @@
 
 My personal developer portfolio, built with Flask (Python) and vanilla HTML/CSS/JS.
 
-🔗 **Live site:** _(add your Render URL here once deployed)_
+🔗 **Live site:** https://joan-portofolio.onrender.com/
 
 ## About
 
